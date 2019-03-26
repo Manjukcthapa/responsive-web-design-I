@@ -68,12 +68,12 @@ html {
     display: flex;
     flex-wrap: wrap;
 }
-
-.info nav a {
-    text-decoration: none;
-    margin-left: 40px;
-    margin-top: 20px;
+header nav{
+    display: flex;
+    justify-content: space-evenly;
 }
+
+
 
 .logo {
     margin: 28px 0 0 91px;
@@ -86,7 +86,7 @@ html {
 }
 
 .highlight {
-    margin-left: 30px;
+    
     margin-top: 50px;
     font-size: 70px;
 }
@@ -133,33 +133,26 @@ footer .address {
     }
 
     header {
+        display:flex;
         flex-wrap: wrap;
     }
 
     header nav {
-        width: 768px;
+        width: 100%;
         padding: 0 30px;
     }
     header .logo {
         order: -1;
-        display: block;
-        margin: 30px auto 0;
+        margin-left:100px;
     }
- nav a{
+
+ header nav a{
     
     text-decoration: none;
-
     color: black;
-    
-    margin: 40px 0 0 30px;
-    
-    margin-left:80px;
-    
-    vertical-align: left;
-    
     font-size: 17px;
+    padding:10px;
     
-    display:inline;
 
 }
 
@@ -168,9 +161,7 @@ footer .address {
 }
 
 
-header nav{
-    justify-content: center;
-}
+
  
 
 .secondpart{
@@ -220,7 +211,8 @@ footer .address{
     margin-bottom:10px;
 }
 .copyright p{
-    text-align: center;
+    
+    margin-left:350px;
     margin-bottom:20px;
 }
 
@@ -258,28 +250,37 @@ footer .address{
         width: 150px;
         padding: 5px;
     }
+    header{
+        display:flex;
+        justify-content: center;
+    }
     
     header .logo{
-        margin-left:150px;
+        margin: 0;
+        padding: 0;
+        order: -1;
 
 
     }
+   
 
     header nav {
         width: 100%;
         flex-direction: column;
         margin: 0;
         padding: 0;
+        justify-content: center
     }
 
     header nav a {
         width: 100%;
         display: block;
         text-align: center;
-        
+        margin:0px;
         font-size: 20px;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid black; 
     }
+    
 
     header nav a:first-child {
         border-top: 1px solid gray;
